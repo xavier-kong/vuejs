@@ -12,6 +12,27 @@ export default {
   components: {
 	  Header
   },
+  data() {
+    return {
+      tasks: []
+    }
+  },
+  created() {
+    this.tasks = [
+      {
+        id: 1,
+        text: 'test1',
+        day: 'March 1st at 2:30pm',
+        reminder: true,
+      },
+      {
+        id: 2,
+        text: 'test2',
+        day: 'March 2st at 2:30pm',
+        reminder: false,
+      }
+    ]
+  }
 };
 </script>
 
